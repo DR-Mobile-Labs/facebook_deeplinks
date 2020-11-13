@@ -1,6 +1,9 @@
 # Changelog
 
-## 0.1.0
+## 0.1.2
+* Change iOS pod constraint to `s.dependency 'FBSDKCoreKit', '~> 7.1.0'`
+
+## 0.1.1
 * Change iOS pod constraint to `s.dependency 'FBSDKCoreKit', '~> 5.5'`
 
 ## 0.1.0
