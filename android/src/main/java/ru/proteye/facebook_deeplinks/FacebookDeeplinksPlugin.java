@@ -1,5 +1,6 @@
 package ru.proteye.facebook_deeplinks;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -96,6 +97,7 @@ public class FacebookDeeplinksPlugin implements FlutterPlugin, ActivityAware, Me
 
   private void initFacebookAppLink() {
     Intent intent = getIntent();
+    final Activity act = this.activityPluginBinding.getActivity();
     if (intent != null && intent.getAction() == Intent.ACTION_VIEW) {
       initialUrl = intent.getDataString();
       handleLink(initialUrl);
@@ -111,7 +113,9 @@ public class FacebookDeeplinksPlugin implements FlutterPlugin, ActivityAware, Me
             return;
           }
           initialUrl = appLinkData.getTargetUri().toString();
-          handleLink(initialUrl);
+          act.runOnUiThread(() -> {
+            handleLink(initialUrl);
+          });
         }
       }
     );
