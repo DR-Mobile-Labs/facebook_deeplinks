@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.1.3
-* Upgrade iOS SDK dependency to 8.2.0 and Android to 8.1.0
+* Upgrade iOS SDK dependency to 8.2.0
 
 ## 0.1.2
 * Change iOS pod constraint to `s.dependency 'FBSDKCoreKit', '~> 7.1.0'`
