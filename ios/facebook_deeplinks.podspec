@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'facebook_deeplinks'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A flutter plugin to get facebook deeplinks and transferring them to the flutter application.'
   s.description      = <<-DESC
 A flutter plugin to get facebook deeplinks and transferring them to the flutter application.
@@ -15,7 +15,7 @@ A flutter plugin to get facebook deeplinks and transferring them to the flutter 
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'FBSDKCoreKit', '~> 7.1.0'
+  s.dependency 'FBSDKCoreKit', '~> 8.2.0'
   s.platform = :ios, '9.0'
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
