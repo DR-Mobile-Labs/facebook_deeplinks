@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.4
+* Upgrade iOS SDK dependency to 9.0.0
+
 ## 0.1.3
 * Upgrade iOS SDK dependency to 8.2.0
 
