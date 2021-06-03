@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+* Loosen the iOS SDK constraint to >=9.0
+
 ## 0.1.4
 * Upgrade iOS SDK dependency to 9.0.0
 
